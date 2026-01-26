@@ -2,6 +2,7 @@
 
 
 
+
 :root{
 
 --primary-color: #0A1128;
@@ -203,7 +204,7 @@ label,legend {
 }
 
 .main-bg {
-    background-image: url("/aulas/sessao_html/projeto/img/main-bg.svg");
+    background-image: url("/aulas/sessao_html/projeto/assets/img/main-bg.svg");
     background-size: cover;
     background-position: center center;
     line-height: 1.5;
@@ -234,14 +235,13 @@ body .full-width {
 
 .intro-content {
     position: relative;
-    top: -8rem; */
+    top: -8rem; 
     display: grid;
-    Alinha colunas mais ao centro em desktop e afasta do menu */
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
     min-height: 100vh;
-    margin-top: 8rem; aumento para evitar que o conteúdo fique colado ao menu */
-    align-items: center; centraliza verticalmente texto e imagem */
+    margin-top: 8rem; 
+    align-items: center; 
     padding-top: 2rem;
 }
 
@@ -251,10 +251,10 @@ body .full-width {
     flex-flow: column wrap;
     justify-content: center ;
     align-items: stretch;
+    margin-top: 9rem;
 }
 
-Alinha a imagem à esquerda do seu grid-column e mantém seu tamanho
-   sem usar margin-left fixa que causa encolhimento em containers menores */
+
 .intro-img {
     justify-content: flex-start;
     align-items: center;
@@ -540,7 +540,7 @@ Alinha a imagem à esquerda do seu grid-column e mantém seu tamanho
         }
 
         .intro-img img {
-            width: 24rem; mantém tamanho sem encolher ao aumentar margem */
+            width: 24rem; 
             max-width: 100%;
             height: auto;
             margin: 0;
@@ -555,12 +555,12 @@ margin-left: 7rem;
 
         .form-group input, 
         .form-group textarea {
-    border: none;
-    background: var(--white-bg);
-    padding: 1.5rem 2rem;
-    width: 75%;
-    font-size: 3rem;
-    outline: none;
+            border: none;
+            background: var(--white-bg);
+            padding: 1.5rem 2rem;
+            width: 75%;
+            font-size: 3rem;
+            outline: none;
 
 
     }
@@ -669,7 +669,7 @@ margin-left: 7rem;
 }
 
 @media(max-width:768px) {
-    Breakpoint tablet: alinhar gallery mais ao centro */
+    
     #gallery .grid {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -706,25 +706,28 @@ margin-left: 7rem;
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    line-height: 2;
-    align-items: center;}
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        line-height: 2;
+        align-items: center;
+    }
 }
+
+
 
 @media(max-width:600px) {
      .intro-text-content-1{
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    line-height: 2;
-    align-items: center;
-
+        margin: 0 auto;
+        padding: 0 1.5rem;
+        line-height: 2;
+        align-items: center;
+        margin-top: 7rem;
     }
 
-    Em telas muito pequenas a imagem ocupa largura disponível sem reduzir proporção */
+    
     .intro-img img {
         width: 100%;
         max-width: 100%;
@@ -732,14 +735,13 @@ margin-left: 7rem;
         margin: 0 auto;
     }
 
-    Tornar o contact form empilhado, com campos em 75% e botão à direita */
     .contact-form .form-grid {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
     }
 
-    Campos ocupam 75% da largura do container */
+  
     .form-group {
         margin: 0;
         width: 75%;
