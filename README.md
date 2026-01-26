@@ -44,14 +44,15 @@ git clone https://github.com/seu-usuario/senafix-eletrica.git
 
 ## 📂 Estrutura de Pastas
 
+```
 senafix-eletrica/
-├── index.html (página principal)
+├── index.html
 ├── css/
-│   └── style.css (estilos responsivos)
-├── img/ (imagens do projeto)
-├── assets/ (recursos adicionais)
+│   └── style.css
+├── img/
 ├── README.md
 └── .gitignore
+```
 
 ## 🎨 Design
 
