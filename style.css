@@ -1,0 +1,796 @@
+
+
+
+
+:root{
+
+--primary-color: #0A1128;
+--white-color: #FFFFFF;
+--light-gray-color: #EEEEEE;
+--gap:3rem;
+--secondy-color: #DC143C;
+--white-bg: #FFFFFF;
+--dark-gray-color: #2e3038;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+
+}
+h2{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    color:#ffffff;
+}
+
+
+h3{
+    font-size: 5rem;
+    color: #ffffff;
+
+}
+h4{
+    font-size: 4.5rem;
+    
+
+}
+h5{
+    font-size: 4rem;
+
+}
+h6{
+    font-size: 3.5rem;
+}
+
+a{
+    text-decoration: none;
+
+
+}
+
+p {
+    margin-bottom: 3rem;
+    color: #fff;
+
+
+}
+
+
+.responsive-table {
+    overflow: hidden;
+    overflow-X: auto;
+    
+
+}
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table, th, td {
+    white-space: nowrap;
+    border: 0.1rem solid var(--primary-color);
+    padding: 1rem;
+    text-align: left;
+
+}
+
+tfoot td, table th {
+    background: var(--light-gray-color);
+
+}
+
+label,legend {
+    color: var(--white-bg);
+
+}
+
+
+.full-page{
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+
+
+}
+
+
+.company-logo{
+    max-width: 8rem;
+
+}
+.company-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu h1 {
+  font-size: 2.3rem;
+  color: var(--primary-color);
+}
+
+.menu h1 a {
+  color: inherit;
+}
+
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 2rem;
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: var(--secondy-color); 
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after {
+  width: 50%;
+  left: 25%;
+}
+
+.main-content{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem var(--gap);
+}
+
+.main-bg {
+    background-image: url("/aulas/sessao_html/projeto/img/main-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    line-height: 1.5;
+
+
+}
+
+
+.section {
+    min-height: 100vh;
+
+}
+
+.white-bg{
+    background-color: var(--white-bg);
+    color: var(--primary-color);
+
+}
+
+.menu-spacing {
+    height: 65px;   
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.intro-content {
+    position: relative;
+    /* top: -8rem; */
+    display: grid;
+    /* Alinha colunas mais ao centro em desktop e afasta do menu */
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    margin-top: 8rem; /* aumento para evitar que o conteúdo fique colado ao menu */
+    align-items: center; /* centraliza verticalmente texto e imagem */
+    padding-top: 2rem;
+}
+
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center ;
+    align-items: stretch;
+}
+
+/* Alinha a imagem à esquerda do seu grid-column e mantém seu tamanho
+   sem usar margin-left fixa que causa encolhimento em containers menores */
+.intro-img {
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+
+
+.intro-text-content p {
+    color: #ffffff;
+
+
+}
+
+.intro-img img{
+    width: 36rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0;
+}
+
+
+
+
+
+.img-final-contact{
+    max-width: 50%;
+    height: auto;
+    margin-top: 3.5rem;
+    margin-left: 32rem;
+
+}
+
+
+.top3-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 64rem;
+    text-align: center;
+
+
+}
+
+#top3 p {
+    color: var(--primary-color);
+
+
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+
+}
+
+.grid-description{
+    padding-bottom: 1rem ;
+    color: #FFFFFF;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: 0;
+    left: 0;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.grid article p {
+    color: #ffffff;
+
+}
+.grid img {
+    width: 100%;
+    max-width: 36rem;
+    height: auto;
+    aspect-ratio: 1;
+    transition: all 30ms ease-in-out;
+}
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.grid img:hover {
+    transform: translate(-3%,3%) scale(1.2) rotate(5deg);
+}
+
+.grid p ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.grid article ul li {
+    list-style-type: circle;
+    margin-left:2rem;
+    text-align: left;
+    line-height: 1.5;
+    padding: 0.3rem;
+    color: #fff;
+   
+}
+
+
+
+#gallery h2, #gallery p {
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+.contact-form {
+    grid-column: span 2;
+
+
+}
+
+.intro-text-content p {
+    text-align: center;
+    line-height: 2;
+    text-indent: 1.3;
+
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+
+
+}
+
+.form-group {
+    min-width: 200px;
+    flex: 1 1 auto;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, 
+.form-group textarea {
+    border: none;
+    background: var(--white-bg);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+
+}
+.form-group input:focus, 
+.form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--secondy-color);
+
+}
+
+
+.form-group button {
+    border: 0.5rem solid #ffffff;
+    background: none;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 30ms ease-in-out;
+}
+
+.form-group button:hover {
+    border: 0.5rem solid var(--primary-color);
+    background: var(--white-bg);
+    color: var(--primary-color);
+
+}
+
+.form-group::placeholder {
+    color: var(--primary-color);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+
+}
+
+.footer a {
+    color: #444;
+
+}
+
+.footer p {
+    margin: 0;
+    padding:  3rem;
+}
+
+.heart {
+    color: var(--secondy-color);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-bg);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
+.back-to-top img {
+    max-width: 75%;
+    padding: 0.8rem;
+    
+
+}
+
+.close-menu {
+        display: none;
+    }
+
+
+
+
+    @media(max-width:924px){
+        .intro-img {
+            justify-content: center;
+            align-items: center;
+            padding-left: 1.5rem;
+        }
+
+        .intro-img img {
+            width: 24rem; /* mantém tamanho sem encolher ao aumentar margem */
+            max-width: 100%;
+            height: auto;
+            margin: 0;
+        }
+    
+
+   
+
+.form-group{
+margin-left: 7rem;
+}
+
+        .form-group input, 
+        .form-group textarea {
+    border: none;
+    background: var(--white-bg);
+    padding: 1.5rem 2rem;
+    width: 75%;
+    font-size: 3rem;
+    outline: none;
+
+
+    }
+
+
+.grid{
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+
+}
+    #gallery .grid {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    #gallery .gallery-img {
+        margin: 0 auto 2rem;
+    }
+
+    #gallery h2,
+    #gallery p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+
+
+   
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: var(--white-bg);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: 'x';
+    }
+
+    .menu-spacing {
+        display: none;   
+    }
+
+    .full-width {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+
+    
+
+    
+
+
+}
+
+@media(max-width:768px) {
+    /* Breakpoint tablet: alinhar gallery mais ao centro */
+    #gallery .grid {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    #gallery .gallery-img {
+        margin: 0 auto 2rem;
+    }
+
+    #gallery h2,
+    #gallery p {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .form-group{
+margin-left: 7rem;
+}
+
+        .form-group input, 
+        .form-group textarea {
+    border: none;
+    background: var(--white-bg);
+    padding: 1.5rem 2rem;
+    width: 75%;
+    font-size: 3rem;
+    outline: none;
+    }
+
+    .intro-text-content-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    line-height: 2;
+    align-items: center;}
+}
+
+@media(max-width:600px) {
+     .intro-text-content-1{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    line-height: 2;
+    align-items: center;
+
+    }
+
+    /* Em telas muito pequenas a imagem ocupa largura disponível sem reduzir proporção */
+    .intro-img img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Tornar o contact form empilhado, com campos em 75% e botão à direita */
+    .contact-form .form-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    /* Campos ocupam 75% da largura do container */
+    .form-group {
+        margin: 0;
+        width: 75%;
+        min-width: 0;
+        flex: 0 0 auto;
+    }
+
+    /* `full-width` volta a ser bloco para textarea; o último full-width (botão) é alinhado à direita */
+    .form-group.full-width {
+        width: 100%;
+        display: block;
+    }
+
+    /* Alinhar apenas o último grupo (botão) à direita dentro do fieldset */
+    .form-group.full-width:last-child {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%; /* 100% do form-group (75% da página) */
+        font-size: 2.4rem;
+        padding: 1.2rem 1rem;
+    }
+
+    .form-group button {
+        width: auto;
+        align-self: auto;
+    }
+
+    /* No bloco de contato: alinhar texto + formulário em uma coluna e mover a imagem para baixo */
+    #contact .intro-content {
+        display: flex;
+        flex-direction: column;
+       
+        gap: var(--gap);
+    }
+
+    #contact .intro-img {
+        order: 3;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 1.5rem;
+        max-width: 50%;
+    }
+
+    #contact .contact-form {
+        order: 2;
+        width: 100%;
+    }
+
+}
