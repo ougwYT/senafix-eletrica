@@ -1,0 +1,32 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+*.lnk
+
+# IDE
+.vscode/
+.idea/
+
+# Node (se usar)
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+
+# Build/Dist
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS Files
+$RECYCLE.BIN/
+.Trash/
