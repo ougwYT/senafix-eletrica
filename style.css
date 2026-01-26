@@ -234,14 +234,14 @@ body .full-width {
 
 .intro-content {
     position: relative;
-    /* top: -8rem; */
+    top: -8rem; */
     display: grid;
-    /* Alinha colunas mais ao centro em desktop e afasta do menu */
+    Alinha colunas mais ao centro em desktop e afasta do menu */
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
     min-height: 100vh;
-    margin-top: 8rem; /* aumento para evitar que o conteúdo fique colado ao menu */
-    align-items: center; /* centraliza verticalmente texto e imagem */
+    margin-top: 8rem; aumento para evitar que o conteúdo fique colado ao menu */
+    align-items: center; centraliza verticalmente texto e imagem */
     padding-top: 2rem;
 }
 
@@ -253,7 +253,7 @@ body .full-width {
     align-items: stretch;
 }
 
-/* Alinha a imagem à esquerda do seu grid-column e mantém seu tamanho
+Alinha a imagem à esquerda do seu grid-column e mantém seu tamanho
    sem usar margin-left fixa que causa encolhimento em containers menores */
 .intro-img {
     justify-content: flex-start;
@@ -540,7 +540,7 @@ body .full-width {
         }
 
         .intro-img img {
-            width: 24rem; /* mantém tamanho sem encolher ao aumentar margem */
+            width: 24rem; mantém tamanho sem encolher ao aumentar margem */
             max-width: 100%;
             height: auto;
             margin: 0;
@@ -669,7 +669,7 @@ margin-left: 7rem;
 }
 
 @media(max-width:768px) {
-    /* Breakpoint tablet: alinhar gallery mais ao centro */
+    Breakpoint tablet: alinhar gallery mais ao centro */
     #gallery .grid {
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -724,7 +724,7 @@ margin-left: 7rem;
 
     }
 
-    /* Em telas muito pequenas a imagem ocupa largura disponível sem reduzir proporção */
+    Em telas muito pequenas a imagem ocupa largura disponível sem reduzir proporção */
     .intro-img img {
         width: 100%;
         max-width: 100%;
@@ -732,14 +732,14 @@ margin-left: 7rem;
         margin: 0 auto;
     }
 
-    /* Tornar o contact form empilhado, com campos em 75% e botão à direita */
+    Tornar o contact form empilhado, com campos em 75% e botão à direita */
     .contact-form .form-grid {
         flex-direction: column;
         align-items: flex-start;
         gap: 1.5rem;
     }
 
-    /* Campos ocupam 75% da largura do container */
+    Campos ocupam 75% da largura do container */
     .form-group {
         margin: 0;
         width: 75%;
@@ -747,13 +747,12 @@ margin-left: 7rem;
         flex: 0 0 auto;
     }
 
-    /* `full-width` volta a ser bloco para textarea; o último full-width (botão) é alinhado à direita */
+    
     .form-group.full-width {
         width: 100%;
         display: block;
     }
 
-    /* Alinhar apenas o último grupo (botão) à direita dentro do fieldset */
     .form-group.full-width:last-child {
         display: flex;
         justify-content: flex-end;
@@ -762,7 +761,7 @@ margin-left: 7rem;
 
     .form-group input,
     .form-group textarea {
-        width: 100%; /* 100% do form-group (75% da página) */
+        width: 100%;
         font-size: 2.4rem;
         padding: 1.2rem 1rem;
     }
@@ -772,7 +771,7 @@ margin-left: 7rem;
         align-self: auto;
     }
 
-    /* No bloco de contato: alinhar texto + formulário em uma coluna e mover a imagem para baixo */
+   
     #contact .intro-content {
         display: flex;
         flex-direction: column;
