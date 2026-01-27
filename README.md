@@ -62,9 +62,7 @@ senafix-eletrica/
 - Cinza: `#EEEEEE`
 - Vermelho (destaque): `#DC143C`
 
-## 📧 Contato
 
-Para informações sobre a empresa Senafix Elétrica, preencha o formulário na página de contato.
 
 ## 📄 Licença
 
