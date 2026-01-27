@@ -4,7 +4,7 @@ Website responsivo para Senafix Elétrica - Fornecimento de materiais elétricos
 
 ## 🌐 Visualizar Online
 
-O site está hospedado em: http://127.0.0.1:5500/aulas/sessao_html/projeto/index.html
+O site está hospedado em: [http://127.0.0.1:5500/aulas/sessao_html/projeto/index.html](https://sennafix.netlify.app/)
 
 ## 📋 Características
 
